@@ -1,0 +1,2 @@
+- [SSA-03](./docs/AWS-Certified-Solutions-Architect-Associate_Exam-Guide_JP.pdf)
+- [Well Architected Framework](./docs/well-architected-framework.md)
