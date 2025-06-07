@@ -1,4 +1,10 @@
 - [SSA-03](./docs/AWS-Certified-Solutions-Architect-Associate_Exam-Guide_JP.pdf)
 - [Well Architected Framework](./docs/well-architected-framework.md)
 
-- [S3](./docs/s3.md)
+- [VPC](./docs/vpc.md)
+- [Storage](./docs/storage.md)
+- [Governance](./docs/governance.md)
+- [Security](./docs/security.md)
+- [Network](./docs/network.md)
+- [Availability](./docs/availability.md)
+- [Monitoring](monitoring.md)
