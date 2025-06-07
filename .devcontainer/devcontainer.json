@@ -1,0 +1,46 @@
+{
+  "name": "aws-training",
+  "image": "mcr.microsoft.com/devcontainers/base:debian-12",
+  "runArgs": ["--name", "aws-training"],
+  "init": true,
+  "remoteEnv": {
+    "TZ": "Asia/Tokyo"
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached",
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+  ],
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "redhat.vscode-yaml",
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-mermaid",
+        "hediet.vscode-drawio",
+        "mosapride.zenkaku",
+        "oderwat.indent-rainbow"
+      ],
+      "settings": {
+        "terminal.integrated.scrollback": 2000,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "files.encoding": "utf8",
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "files.trimTrailingWhitespaceInRegexAndStrings": true
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
